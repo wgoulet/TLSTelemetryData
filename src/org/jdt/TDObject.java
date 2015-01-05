@@ -15,6 +15,7 @@ import java.util.Vector;
 public class TDObject {
 	private String cipher;
 	private String protocol;
+	private String clientname;
 	private final Vector<byte[]> certlist;
 
 	public TDObject()
@@ -60,6 +61,20 @@ public class TDObject {
 	 */
 	public void setProtocol(String protocol) {
 		this.protocol = protocol;
+	}
+
+	/**
+	 * @return the clientname
+	 */
+	public String getClientname() {
+		return clientname;
+	}
+
+	/**
+	 * @param clientname the clientname to set
+	 */
+	public void setClientname(String clientname) {
+		this.clientname = clientname;
 	}
 
 	
