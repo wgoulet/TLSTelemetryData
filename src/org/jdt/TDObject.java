@@ -15,7 +15,8 @@ import java.util.Vector;
 public class TDObject {
 	private String cipher;
 	private String protocol;
-	private String clientname;
+	private String clientaddress;
+	private int clientport;
 	private final Vector<byte[]> certlist;
 
 	public TDObject()
@@ -64,19 +65,33 @@ public class TDObject {
 	}
 
 	/**
-	 * @return the clientname
+	 * @return the clientaddress
 	 */
-	public String getClientname() {
-		return clientname;
+	public String getClientaddress() {
+		return clientaddress;
 	}
 
 	/**
-	 * @param clientname the clientname to set
+	 * @param clientaddress the clientaddress to set
 	 */
-	public void setClientname(String clientname) {
-		this.clientname = clientname;
+	public void setClientaddress(String clientaddress) {
+		this.clientaddress = clientaddress;
 	}
 
-	
+
+	/**
+	 * @param clientport the clientport to set
+	 */
+	public void setClientport(int clientport) {
+		this.clientport = clientport;
+	}
+
+	/**
+	 * @return the clientport
+	 */
+	public int getClientport() {
+		return clientport;
+	}
+
 	
 }
